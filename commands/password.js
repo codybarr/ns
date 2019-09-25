@@ -2,9 +2,11 @@
 
 const colors = require('colors')
 const { distanceInWords, addMilliseconds } = require('date-fns')
-const { words } = require('../dictionaries/coolwords')
+const coolDictionary = require('../dictionaries/coolwords')
+const secureDictionary = require('../dictionaries/words')
 
-const password = (number_of_words = 4, number_of_times = 1) => {
+const password = (number_of_words = 4, number_of_times = 1, cool = false) => {
+	let words = cool ? coolDictionary : secureDictionary
 	let time = words.length ** number_of_words
 	time = addMilliseconds(new Date(), time)
 	time = distanceInWords(new Date(), time)

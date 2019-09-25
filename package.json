@@ -24,6 +24,7 @@
 	"homepage": "https://github.com/codybarr/ns#readme",
 	"devDependencies": {},
 	"scripts": {
+		"bump:patch": "npm version patch -m 'Version patch bump to %s.'",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [

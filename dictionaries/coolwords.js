@@ -1,4 +1,4 @@
-const words = [
+module.exports = [
 	'absurd',
 	'acid',
 	'active',
@@ -539,5 +539,3 @@ const words = [
 	'zipper',
 	'zombie'
 ]
-
-module.exports = { words }

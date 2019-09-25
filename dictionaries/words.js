@@ -1,4 +1,4 @@
-const words = [
+module.exports = [
 	'ability',
 	'absence',
 	'accident',
@@ -1263,5 +1263,3 @@ const words = [
 	'yields',
 	'youth'
 ]
-
-module.exports = { words }
