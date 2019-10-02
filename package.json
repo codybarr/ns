@@ -1,5 +1,6 @@
 {
 	"dependencies": {
+		"clipboardy": "^2.1.0",
 		"colors": "^1.1.2",
 		"commander": "^2.14.1",
 		"date-fns": "^1.30.1"

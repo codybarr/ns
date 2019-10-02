@@ -2,6 +2,8 @@
 
 const colors = require('colors')
 const { distanceInWords, addMilliseconds } = require('date-fns')
+const clipboardy = require('clipboardy')
+
 const coolDictionary = require('../dictionaries/coolwords')
 const secureDictionary = require('../dictionaries/words')
 
@@ -17,6 +19,7 @@ const password = (number_of_words = 4, number_of_times = 1, cool = false) => {
 			return words[randomIndex]
 		})
 		console.log(password.join('-').green)
+		clipboardy.writeSync(password.join('-'))
 		number_of_times--
 	}
 
