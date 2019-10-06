@@ -1,14 +1,13 @@
 {
-	"dependencies": {
-		"clipboardy": "^2.1.0",
-		"colors": "^1.1.2",
-		"commander": "^2.14.1",
-		"date-fns": "^1.30.1"
-	},
 	"name": "@nosweat/ns",
 	"version": "1.1.0",
 	"description": "Personal helper utility for all the things.",
 	"main": "index.js",
+	"scripts": {
+		"bump:patch": "npm version patch -m 'Version patch bump to %s.'",
+		"deploy:npm": "npm publish --access public",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
 	"preferGlobal": true,
 	"bin": {
 		"ns": "./index.js"
@@ -23,12 +22,15 @@
 		"url": "https://github.com/codybarr/ns/issues"
 	},
 	"homepage": "https://github.com/codybarr/ns#readme",
-	"devDependencies": {},
-	"scripts": {
-		"bump:patch": "npm version patch -m 'Version patch bump to %s.'",
-		"deploy:npm": "npm publish --access public",
-		"test": "echo \"Error: no test specified\" && exit 1"
+	"dependencies": {
+		"clipboardy": "^2.1.0",
+		"colors": "^1.1.2",
+		"commander": "^2.14.1",
+		"date-fns": "^1.30.1",
+		"faker": "^4.1.0",
+		"inquirer": "^7.0.0"
 	},
+	"devDependencies": {},
 	"keywords": [
 		"password",
 		"cli"

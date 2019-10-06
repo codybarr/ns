@@ -3,6 +3,7 @@
 const program = require('commander')
 
 const { password } = require('./commands/password')
+const { generate } = require('./commands/generate')
 
 program
 	.version('1.0.0')
@@ -23,11 +24,20 @@ program
 		'--cool',
 		'Use the dictionary of cool words to generate passwords 😎.'
 	)
-	.action(function(opts) {
+	.action(opts => {
 		const missing_msg = `No options provided. Run 'ns password -h' for help info.\n`
 		opts.words
 			? password(opts.words, opts.times, opts.cool)
 			: console.log(missing_msg)
+	})
+
+program
+	.command('generate')
+	.description(
+		'Generates multiple dummy content files based on user input. Defaults to .md files with YAML frontmatter.'
+	)
+	.action(_ => {
+		generate()
 	})
 
 program.parse(process.argv)
