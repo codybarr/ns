@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-
-const colors = require('colors')
+require('colors')
 const { distanceInWords, addMilliseconds } = require('date-fns')
 const clipboardy = require('clipboardy')
 
@@ -14,7 +13,7 @@ const password = (number_of_words = 4, number_of_times = 1, cool = false) => {
 	time = distanceInWords(new Date(), time)
 
 	while (number_of_times > 0) {
-		let password = [...Array(Number(number_of_words)).keys()].map(i => {
+		let password = [...Array(Number(number_of_words)).keys()].map((i) => {
 			let randomIndex = Math.floor(Math.random() * words.length)
 			return words[randomIndex]
 		})

@@ -4,9 +4,10 @@ const program = require('commander')
 
 const { password } = require('./commands/password')
 const { generate } = require('./commands/generate')
+const { md5 } = require('./commands/md5')
 
 program
-	.version('1.0.0')
+	.version('1.3.0')
 	.description('Personal helper utility for all the things.')
 
 program
@@ -24,7 +25,7 @@ program
 		'--cool',
 		'Use the dictionary of cool words to generate passwords 😎.'
 	)
-	.action(opts => {
+	.action((opts) => {
 		const missing_msg = `No options provided. Run 'ns password -h' for help info.\n`
 		opts.words
 			? password(opts.words, opts.times, opts.cool)
@@ -36,12 +37,17 @@ program
 	.description(
 		'Generates multiple dummy content files based on user input. Defaults to .md files with YAML frontmatter.'
 	)
-	.action(_ => {
+	.action((_) => {
 		generate()
 	})
+
+program
+	.command('md5')
+	.description('Creates an md5 hash of the following parameter')
+	.action((opts) => md5(opts))
 
 program.parse(process.argv)
 
 if (!process.argv.slice(2).length) {
-	program.outputHelp(text => text + '\n')
+	program.outputHelp((text) => text + '\n')
 }
