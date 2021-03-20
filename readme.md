@@ -54,6 +54,14 @@ generates the following message in the console (and copies it to the clipboard):
 
     bbb2c5e63d2ef893106fdd0d797aa97a
 
+## Publish new version to NPM registry
+
+1. Commit all changes
+2. Run `npm version [major|minor|patch] "Upgrade to %s for reasons."`
+3. Push all changes (including tags) with: `git push origin master --tags"
+
+_There is a github action / workflow that publishes to NPM when a new tag is pushed._
+
 ## Upgrade to the latest version
 
 `npm update -g @nosweat/ns`
