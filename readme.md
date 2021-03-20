@@ -52,7 +52,11 @@ displays this help:
 
 generates the following message in the console (and copies it to the clipboard):
 
-    `bbb2c5e63d2ef893106fdd0d797aa97a`
+    bbb2c5e63d2ef893106fdd0d797aa97a
+
+## Upgrade to the latest version
+
+`npm update -g @nosweat/ns`
 
 ## License
 
