@@ -5,9 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"bump:patch": "npm version patch -m 'Version patch bump to %s.'",
-		"deploy:npm": "npm publish --access public",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "snowpack build"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"preferGlobal": true,
 	"bin": {
