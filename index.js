@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
-const program = require('commander')
+import program from 'commander'
+import { version } from './package.json'
 
 const { password } = require('./commands/password')
 const { generate } = require('./commands/generate')
 const { md5 } = require('./commands/md5')
 
 program
-	.version('1.3.0')
+	.version(version)
 	.description('Personal helper utility for all the things.')
 
 program

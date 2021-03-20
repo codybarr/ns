@@ -46,6 +46,14 @@ displays this help:
     --cool                         Use the dictionary of cool words to generate passwords 😎.
     -h, --help                     output usage information
 
+### `ns md5`
+
+    ns md5 supersecretpassword
+
+generates the following message in the console (and copies it to the clipboard):
+
+    `bbb2c5e63d2ef893106fdd0d797aa97a`
+
 ## License
 
 (The MIT License)
