@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import program from 'commander'
-import { version } from './package.json'
+const program = require('commander')
+const { version } = require('./package.json')
 
 const { password } = require('./commands/password')
 const { generate } = require('./commands/generate')
