@@ -1,38 +1,43 @@
 {
-	"name": "@nosweat/ns",
-	"version": "1.3.2",
-	"description": "Personal helper utility for all the things.",
-	"main": "index.js",
-	"scripts": {
-		"bump:patch": "npm version patch -m 'Version patch bump to %s.'",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"preferGlobal": true,
-	"bin": {
-		"ns": "index.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/codybarr/ns.git"
-	},
-	"author": "Cody Barr <cody.barr@gmail.com>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/codybarr/ns/issues"
-	},
-	"homepage": "https://github.com/codybarr/ns#readme",
-	"dependencies": {
-		"clipboardy": "^2.1.0",
-		"colors": "^1.1.2",
-		"commander": "^2.14.1",
-		"crypto-js": "^4.0.0",
-		"date-fns": "^1.30.1",
-		"faker": "^4.1.0",
-		"inquirer": "^7.0.0"
-	},
-	"keywords": [
-		"password",
-		"md5",
-		"cli"
-	]
+  "name": "@nosweat/ns",
+  "version": "1.3.2",
+  "description": "Personal helper utility for all the things.",
+  "main": "index.js",
+  "scripts": {
+    "bump:patch": "npm version patch -m 'Version patch bump to %s.'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretty:check": "prettier --check **/*.js",
+    "pretty:write": "prettier --write **/*.js"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "ns": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codybarr/ns.git"
+  },
+  "author": "Cody Barr <cody.barr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codybarr/ns/issues"
+  },
+  "homepage": "https://github.com/codybarr/ns#readme",
+  "dependencies": {
+    "clipboardy": "^2.1.0",
+    "colors": "^1.1.2",
+    "commander": "^2.14.1",
+    "crypto-js": "^4.0.0",
+    "date-fns": "^1.30.1",
+    "faker": "^4.1.0",
+    "inquirer": "^7.0.0"
+  },
+  "keywords": [
+    "password",
+    "md5",
+    "cli"
+  ],
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
 }
