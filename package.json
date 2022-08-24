@@ -1,6 +1,6 @@
 {
   "name": "@nosweat/ns",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Personal helper utility for all the things.",
   "main": "index.js",
   "scripts": {
