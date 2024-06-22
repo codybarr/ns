@@ -1,0 +1,5 @@
+{
+  "name": "@nosweat/ns",
+  "version": "1.3.3",
+  "exports": "./index.js"
+}
