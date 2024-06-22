@@ -14,7 +14,7 @@ or
 
 ### `ns`
 
-    ns
+`ns` or `npx @nosweat/ns`
 
 displays this help:
 
@@ -22,18 +22,16 @@ displays this help:
 
     Options:
 
-      -V, --version  output the version number
-      -h, --help     output usage information
+        -V, --version  output the version number
+        -h, --help     output usage information
 
-    Commands:
+Commands:
 
-       password [options]  Simple word-based password generator
+      password [options]  Simple word-based password generator
 
 ### `ns password`
 
-    ns password -h
-
-displays this help:
+`ns password -h` displays this help:
 
     Usage: password [options]
 
@@ -46,9 +44,22 @@ displays this help:
     --cool                         Use the dictionary of cool words to generate passwords 😎.
     -h, --help                     output usage information
 
+Example
+
+`ns password --words 4 --cool`
+
+Output:
+
+```
+exciting-zelda-felony-trees
+Worst case scenario your password would take over 2 years to hack
+```
+
 ### `ns md5`
 
-    ns md5 supersecretpassword
+```
+ns md5 supersecretpassword
+```
 
 generates the following message in the console (and copies it to the clipboard):
 
